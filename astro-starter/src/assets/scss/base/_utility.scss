@@ -110,6 +110,15 @@
   white-space: nowrap;
 }
 
+.solid-background {
+  background-color: var(--background-color);
+  border-radius: var(--radius-m);
+}
+
+.margin-small {
+  margin: var(--space-s);
+}
+
 $space-map: (
   3xs: var(--space-3xs),
   2xs: var(--space-2xs),

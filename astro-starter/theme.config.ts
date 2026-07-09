@@ -1,21 +1,21 @@
 import { defineThemeConfig } from '@utils/defineThemeConfig'
-import previewImage from '@assets/img/social-preview-image.png'
-import logoImage from '@assets/img/logo.svg'
+//import previewImage from '@assets/img/social-preview-image.png'
+import logoImage from '@assets/img/PinkRiotLogo160px.png'
 
 export default defineThemeConfig({
-  name: 'Pink Riot Static Site',
+  name: 'Pink Riot Comic Show',
   id: 'pink-riot-static-site',
   seo: {
-    title: 'Pink Riot Static Site',
-    description: 'Pink Riot Static Site is a lightweight accessible content site with room to grow.',
-    image: previewImage,
+    title: 'The Pink Riot Comic Show',
+    description: 'The Pink Riot Comic Show is a live talk show and podcast that discusses all things nerd with a Black feminist perspective in comic books, novels, TV, and film.',
+    //image: previewImage,
   },
   logo: logoImage,
   colors: {
-    primary: '#d648ff',
-    secondary: '#00d1b7',
-    neutral: '#b9bec4',
-    outline: '#ff4500',
+    primary: '#1afdfc',
+    secondary: '#fefe05',
+    neutral: '#f0347f',
+    outline: '#cbcbcb',
   },
   navigation: {
     darkmode: true,
