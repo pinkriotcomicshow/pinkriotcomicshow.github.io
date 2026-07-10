@@ -1,5 +1,5 @@
 :root {
-  color-scheme: light;
+  color-scheme: dark;
   interpolate-size: allow-keywords;
 
   // brand colors (change these to your own brand colors)
@@ -141,7 +141,9 @@
   --target-size-max: 44px;
   --backdrop-color: hsl(0deg 100% 0% / 0.75);
   --backdrop-blur: blur(3px);
-  --background-image: url("data:image/svg+xml;utf8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2230%22%20height%3D%2230%22%20viewBox%3D%220%200%2030%2030%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23f0347f%22%2F%3E%3Ccircle%20cx%3D%2215%22%20cy%3D%2215%22%20r%3D%2211%22%20fill%3D%22%23ce0064%22%2F%3E%3C%2Fsvg%3E");
+  --background-image-light: url("data:image/svg+xml;utf8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2230%22%20height%3D%2230%22%20viewBox%3D%220%200%2030%2030%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23f0347f%22%2F%3E%3Ccircle%20cx%3D%2215%22%20cy%3D%2215%22%20r%3D%2211%22%20fill%3D%22%23f25292%22%2F%3E%3C%2Fsvg%3E");
+  --background-image-dark: url("data:image/svg+xml;utf8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2230%22%20height%3D%2230%22%20viewBox%3D%220%200%2030%2030%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23f0347f%22%2F%3E%3Ccircle%20cx%3D%2215%22%20cy%3D%2215%22%20r%3D%2211%22%20fill%3D%22%23ce0064%22%2F%3E%3C%2Fsvg%3E");
+  --background-image: light-dark(var(--background-image-light), var(--background-image-dark));
   
   // kbd
   --kbd-color-text: light-dark(var(--color-gray-200), var(--color-gray-800));
@@ -150,6 +152,30 @@
 }
 
 // dark color scheme overrides
-.darkmode {
-  color-scheme: dark;
+// .darkmode {
+//   color-scheme: dark;
+//   body{
+//     background-image: var(--background-image-dark);
+//   }
+// }
+
+body{
+    background-image: var(--background-image-dark);
 }
+
+// :root {
+//   color-scheme: light dark;
+// }
+
+// @media (prefers-color-scheme: dark) {
+//   .element {
+//     background-image: var(--background-image-dark);
+//   }
+// }
+
+// @media (prefers-color-scheme: light) {
+//   .element {
+//     background-image: var(--background-image-light);
+//   }
+// }
+

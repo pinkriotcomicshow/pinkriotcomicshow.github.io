@@ -18,7 +18,7 @@ export default defineThemeConfig({
     outline: '#cbcbcb',
   },
   navigation: {
-    darkmode: true,
+    darkmode: false,
     items: [
       {
               type: 'link',
