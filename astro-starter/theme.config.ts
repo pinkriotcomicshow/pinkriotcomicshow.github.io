@@ -24,7 +24,7 @@ export default defineThemeConfig({
               type: 'link',
               label: 'Home',
               href: '/',
-            },
+            }/*,
       {
               type: 'link',
               label: 'About',
@@ -34,8 +34,30 @@ export default defineThemeConfig({
               type: 'link',
               label: 'Contact',
               href: '/contact',
-            }
+            }*/
     ],
   },
-  socials: [],
+  socials: [
+    {
+    
+            label: 'Instagram',
+            href: 'https://www.instagram.com/pinkriotcomicshow',
+            icon: 'instagram.svg',
+    },
+    {
+            label: 'Twitch',
+            href: 'https://www.twitch.tv/pinkriotcomicshow',
+            icon: 'twitch.svg',
+    },
+    {
+            label: 'TikTok',
+            href: 'https://www.tiktok.com/@pinkriotcomicshow',
+            icon: 'tiktok.svg',
+    },
+    {
+            label: 'Threads',
+            href: 'https://www.threads.com/@pinkriotcomicshow',
+            icon: 'threads.svg',
+    },
+  ],
 })
