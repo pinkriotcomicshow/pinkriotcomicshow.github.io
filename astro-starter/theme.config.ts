@@ -1,9 +1,9 @@
 import { defineThemeConfig } from '@utils/defineThemeConfig'
 //import previewImage from '@assets/img/social-preview-image.png'
-import logoImage from '@assets/img/PinkRiotLogo160px.png'
+import logoImage from '@assets/img/logo.svg'
 
 export default defineThemeConfig({
-  name: 'Pink Riot Comic Show',
+  name: 'The Pink Riot Comic Show',
   id: 'pink-riot-static-site',
   seo: {
     title: 'The Pink Riot Comic Show',
