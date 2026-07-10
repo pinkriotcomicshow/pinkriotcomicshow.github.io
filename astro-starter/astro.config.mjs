@@ -1,4 +1,4 @@
-import { defineConfig, envField } from 'astro/config'
+import { defineConfig } from 'astro/config'
 import { fileURLToPath } from 'url'
 import compress from 'astro-compress'
 import icon from 'astro-icon'
@@ -35,8 +35,7 @@ const viteConfig = {
 
 export default defineConfig({
   compressHTML: true,
-  site: 'https://example.com',
+  site: 'https://pinkriotcomicshow.com',
   integrations: [compress(), icon(), sitemap()],
   vite: viteConfig,
-
 })
