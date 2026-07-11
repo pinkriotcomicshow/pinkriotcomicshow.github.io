@@ -23,7 +23,7 @@ const socialLinks = themeConfig.socials ?? []
   <section class="py-8">
     <div class="flex wrap gap-4 solid-background margin-small">
       <div id="footerBlurb" class="margin-small">
-        <Heading level="h2" size="h4">{themeConfig.name}</Heading>
+        <Heading class="epilogue-500" level="h2" size="h4">{themeConfig.name}</Heading>
         <p>
           The Pink Riot Comic Show is a live talk show and podcast that discusses all things nerd with a Black feminist perspective in comic books, novels, TV, and film. Hang out with us in the live chat to witness our shenanigans and thought-provoking takes. We go live on Thursday nights at 5pm PT/ 8pm ET on YouTube, Instagram, and Twitch!
         </p>
@@ -31,7 +31,7 @@ const socialLinks = themeConfig.socials ?? []
       {
         footerLinks.length > 0 && (
           <div class="flex-3 margin-small">
-            <Heading level="h2" size="h6" class="mb-4">Pages</Heading>
+            <Heading level="h2" size="h6" class="mb-4 epilogue-500">Pages</Heading>
             <ul class="flex flex-col gap-2">
               {footerLinks.map((link) => (
                 <li>
@@ -45,7 +45,7 @@ const socialLinks = themeConfig.socials ?? []
       {
         socialLinks.length > 0 && (
           <div class="flex-3 margin-small">
-            <Heading level="h2" size="h6" class="mb-4">Socials</Heading>
+            <Heading level="h2" size="h6" class="mb-4 epilogue-500">Socials</Heading>
             <ul class="flex flex-col gap-2">
               {socialLinks.map((link) => (
                 <li>
