@@ -119,6 +119,18 @@
   margin: var(--space-s);
 }
 
+.luckiest-guy-regular {
+  font-family: "Luckiest Guy", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bangers-regular {
+  font-family: "Bangers", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
 $space-map: (
   3xs: var(--space-3xs),
   2xs: var(--space-2xs),
